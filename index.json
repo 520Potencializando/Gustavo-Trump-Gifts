@@ -1,0 +1,403 @@
+{
+  "#comment": "",
+  "html": {
+    "@xmlns": "http://www.w3.org/1999/xhtml",
+    "head": {
+      "meta": [
+        {
+          "@name": "robots",
+          "@content": "noindex"
+        },
+        {
+          "@http-equiv": "Content-Type",
+          "@content": "text/html;charset=utf-8"
+        },
+        {
+          "@name": "viewport",
+          "@content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "title": "Botão Quizz",
+      "link": [
+        {
+          "@href": "assets/css/ps-new2.css",
+          "@rel": "stylesheet"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "assets/css/ui.progress-bar-download.css",
+          "@media": "screen"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "assets/css/asPieProgress.min.css"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "assets/css/jquery-steps.min.css"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "assets/css/bootstrap.min.css"
+        },
+        {
+          "@rel": "stylesheet",
+          "@type": "text/css",
+          "@href": "assets/css/style.css"
+        }
+      ],
+      "style": [
+        {
+          "@type": "text/css",
+          "#text": "*{margin:0;padding:0}body{font-family:\"Open Sans\",\"Arial\", sans-serif}.opt{margin:0 auto;max-width:800px;margin-top:60px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0;border-bottom-right-radius:0;background-color:#ffffff;padding-bottom:0}.opt .center{display:block;margin-left:auto;margin-right:auto}@media (max-width: 500px){#noLeave{width:82% !important}}.container-1100{margin:0 auto;max-width:66.875em;padding:0 1em}.displaNone{display:none}.pie_progress{width:180px;margin:10px auto}@media all and (max-width: 768px){.pie_progress{width:60%;max-width:180px}}#noLeave{width:100%;max-width:330px !important}.show{visibility:none}"
+        },
+        ".flexrow{display:flex;flex-direction:row;justify-content:space-around}.flexcol{flex-direction:column}.flexcol div{margin-top:15px}@media (min-width: 768px){.fixed{margin-left:60px;margin-right:60px}}.form-builder-details{height:auto !important}"
+      ]
+    },
+    "body": {
+      "div": {
+        "@id": "hiddencontent",
+        "div": {
+          "@class": "opt",
+          "div": [
+            {
+              "@class": "step1",
+              "h2": "IMPORTANT!",
+              "em": {
+                "h3": "You Have Been Pre-Qualified To Secure a PRODUCT FREE PACKAGE After This 3-Step Quizz."
+              },
+              "p": {
+                "@style": "text-align: center;",
+                "#text": "Click CONTINUE to begin"
+              },
+              "div": {
+                "@id": "link1",
+                "a": {
+                  "@href": "javascript:void(0)",
+                  "@onclick": "nextStep(2);",
+                  "img": {
+                    "@src": "assets/images/btn-continue.webp",
+                    "@class": "center",
+                    "@style": "width: 100%; max-width: 300px; height: auto;"
+                  }
+                }
+              }
+            },
+            {
+              "@class": "form-builder-details py-5",
+              "@id": "wrapper1",
+              "@style": "display: none;",
+              "div": {
+                "@class": "container2",
+                "div": {
+                  "@class": "step-container",
+                  "div": {
+                    "@class": "step-congratz pt-4",
+                    "div": {
+                      "@class": "congratulation-bg",
+                      "div": {
+                        "@class": "congratulation-header text-center",
+                        "h2": "CONGRATULATIONS!",
+                        "h3": "YOU WIN A [PRODUCT] FREE PACKAGE",
+                        "a": {
+                          "@href": "#",
+                          "@class": "btn-a",
+                          "img": {
+                            "@src": "assets/images/btn-get-free.webp",
+                            "@width": "497",
+                            "@height": "111",
+                            "@style": "max-width: 100%; height: auto;"
+                          }
+                        },
+                        "p": {
+                          "@class": "valued-discount",
+                          "strong": {
+                            "strike": "$64.99",
+                            "span": "FREE!",
+                            "#text": "Valued at"
+                          }
+                        },
+                        "div": {
+                          "@class": "timer-box",
+                          "p": {
+                            "span": {
+                              "@id": "timer",
+                              "@style": "color:red; font-weight: bold;",
+                              "#text": "4:49"
+                            },
+                            "#text": "This prize expires in"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "section": {
+            "@class": "form-builder-details py-5 step2 displaNone fixed",
+            "@id": "main-section",
+            "@style": "height: inherit; padding-bottom: 0 !important;",
+            "div": {
+              "@class": "ideal-card-wrapper rounded pb-3 mb-3",
+              "div": {
+                "@class": "ideal-card-body",
+                "div": {
+                  "@class": "step-app form-builder-steps-wizard position-relative",
+                  "@id": "steps-wizard",
+                  "div": [
+                    {
+                      "@class": "step-top pt-4",
+                      "div": {
+                        "@class": "step-header ",
+                        "div": {
+                          "@class": "d-flex align-items-center gap-2 mb-3",
+                          "h4": {
+                            "@class": " ps-4 pe-2 fs-5 mb-0 fw-bold text-white",
+                            "#text": "Question"
+                          },
+                          "div": {
+                            "@class": "slides-numbers bg-red is-radius-8 px-2",
+                            "@style": "display: block;",
+                            "span": [
+                              {
+                                "@id": "current-count",
+                                "@class": "totalactive  fw-medium fs-6 text-white",
+                                "#text": "1"
+                              },
+                              {
+                                "@class": "fw-medium fs-6 text-white px-1",
+                                "#text": "of"
+                              },
+                              {
+                                "@class": "total fw-medium fs-6 text-white",
+                                "#text": "3"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "ul": {
+                        "@id": "step-steps",
+                        "@class": "step-steps d-flex justify-content-between gap-2 mx-4 pb-3 list-unstyled",
+                        "@style": "max-width: 600px; background-color:initial;",
+                        "li": [
+                          {
+                            "@data-step-target": "step1",
+                            "@class": "step-border"
+                          },
+                          {
+                            "@data-step-target": "step2",
+                            "@class": "step-border"
+                          },
+                          {
+                            "@data-step-target": "step3",
+                            "@class": "step-border"
+                          },
+                          {
+                            "@data-step-target": "step4"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@class": "step-content border-0 px-0",
+                      "div": [
+                        {
+                          "@class": "step-tab-panel",
+                          "@data-step": "step1",
+                          "div": {
+                            "@class": "ideal-card",
+                            "div": {
+                              "@class": "ideal-card-body px-3 py-1",
+                              "div": [
+                                {
+                                  "@class": "media-wrap",
+                                  "h1": {
+                                    "@class": " fs-36 fw-bold text-clr-black1 firstStepHeading",
+                                    "#text": "Do you agree to follow exactly the recommendations for using the [PRODUCT] so as not to use too much as it is very strong?"
+                                  }
+                                },
+                                {
+                                  "@class": "step-footer justify-content-end",
+                                  "div": {
+                                    "@class": "next-back",
+                                    "@data-step-action": "next",
+                                    "@class": "step-btn",
+                                    "a": {
+                                      "@class": "btn btn-outline-primary my-4 float-right stage-next-btn btn-next",
+                                      "#text": "YES"
+                                    }
+                                  },
+                                  "a": {
+                                    "@class": "btn btn-outline-primary my-4 float-left stage-back-btn ",
+                                    "@href": "javascript:void(0)",
+                                    "@onclick": "alert('Sorry! In Order To Access This Powerful Program, You Must Agree To These Rules')",
+                                    "#text": "NO"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "@class": "step-tab-panel  px-3 py-1",
+                          "@data-step": "step2",
+                          "div": [
+                            {
+                              "@class": "media-wrap",
+                              "h1": {
+                                "@class": " fs-36 fw-bold text-clr-black1 firstStepHeading",
+                                "#text": "You agree to submit a success testimonial after 20 days of treatment?"
+                              }
+                            },
+                            {
+                              "@class": "step-footer justify-content-end",
+                              "div": {
+                                "@class": "next-back",
+                                "@data-step-action": "next",
+                                "@class": "step-btn",
+                                "a": {
+                                  "@class": "btn btn-outline-primary my-4 float-right stage-next-btn btn-next",
+                                  "#text": "YES"
+                                }
+                              },
+                              "a": {
+                                "@class": "btn btn-outline-primary my-4 float-left stage-back-btn btn-prev",
+                                "@href": "javascript:void(0)",
+                                "@onclick": "alert('Sorry! In Order To Access This Powerful Program, You Must Agree To These Rules')",
+                                "#text": "NO"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "step-tab-panel  px-3 py-1",
+                          "@data-step": "step3",
+                          "div": [
+                            {
+                              "@class": "media-wrap",
+                              "h1": {
+                                "@class": " fs-36 fw-bold text-clr-black1 firstStepHeading",
+                                "#text": "You agree to make payment with a secure credit card that is not cloned?"
+                              }
+                            },
+                            {
+                              "@class": "step-footer justify-content-end",
+                              "div": {
+                                "@data-step-action": "next",
+                                "@class": "next-back step-btn",
+                                "a": {
+                                  "@class": "btn btn-outline-primary my-4 float-right stage-next-btn verify-answer",
+                                  "#text": "YES"
+                                }
+                              },
+                              "a": {
+                                "@class": "btn btn-outline-primary my-4 float-left stage-back-btn btn-prev",
+                                "@href": "javascript:void(0)",
+                                "@onclick": "alert('Sorry! In Order To Access This Powerful Program, You Must Agree To These Rules')",
+                                "#text": "NO"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "step-tab-panel px-3 py-1",
+                          "@data-step": "step4",
+                          "div": [
+                            {
+                              "@class": "media-wrap",
+                              "div": {
+                                "@class": "progress-circle",
+                                "div": {
+                                  "@class": "pie_progress--slow",
+                                  "@role": "progressbar",
+                                  "span": {
+                                    "@class": "pie_progress__number",
+                                    "#text": "0%"
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "@class": "next-back step-btn",
+                              "@style": "display:none",
+                              "a": {
+                                "@href": "javascript:void(0)",
+                                "@class": "btn btn-outline-primary my-4 float-right stage-next-btn",
+                                "span": {
+                                  "@class": "ps-2",
+                                  "svg": {
+                                    "@width": "24",
+                                    "@height": "24",
+                                    "@viewbox": "0 0 24 24",
+                                    "@fill": "none",
+                                    "@xmlns": "http://www.w3.org/2000/svg",
+                                    "path": [
+                                      {
+                                        "@d": "M14.4299 5.92999L20.4999 12L14.4299 18.07",
+                                        "@stroke": "white",
+                                        "@stroke-width": "2",
+                                        "@stroke-miterlimit": "10",
+                                        "@stroke-linecap": "round",
+                                        "@stroke-linejoin": "round"
+                                      },
+                                      {
+                                        "@d": "M3.5 12H20.33",
+                                        "@stroke": "white",
+                                        "@stroke-width": "2",
+                                        "@stroke-miterlimit": "10",
+                                        "@stroke-linecap": "round",
+                                        "@stroke-linejoin": "round"
+                                      }
+                                    ]
+                                  }
+                                },
+                                "#text": "Next"
+                              }
+                            }
+                          ],
+                          "h1": {
+                            "@class": "text-center fs-30 fw-bold text-clr-black1 mt-4",
+                            "#text": "Verifying Your Answers"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "script": [
+        {
+          "@src": "assets/js/jquery-3.2.1.min.js"
+        },
+        {
+          "@src": "assets/js/script.js"
+        },
+        {
+          "@src": "assets/js/progress_download2.js"
+        },
+        {
+          "@src": "assets/js/bootstrap.bundle.min.js"
+        },
+        {
+          "@src": "assets/js/jquery-steps.min.js"
+        },
+        {
+          "@src": "assets/js/timer.js"
+        },
+        "$(document).ready(function(){$(\"#rule_btn_1\").click(function(e){e.preventDefault();if($(this).attr(\"next\")==4){$(\".ruleBtn_box\").hide();$(\"#optin-form-outer\").fadeIn(\"slow\")}var currentstep=\"#rule_\"+$(this).attr(\"next\");var previusstep=$(this).attr(\"next\")-1;var previusstep=\"#rule_\"+previusstep;var nextstep=$(this).attr(\"next\");var nextstep=parseInt(nextstep)+1;$(this).attr(\"next\",nextstep);$(previusstep).hide();$(currentstep).fadeIn(\"slow\")})});",
+        "$('#link1').fadeIn(500);function nextStep(s){var previousStep=(parseInt(Number(s)-1));var nextStep=parseInt(Number(s));if(s==6){$('.pie_progress').asPieProgress('reset');$('.pie_progress').asPieProgress('start')}else{$('.step'+previousStep).fadeOut(500);$('.step'+previousStep).addClass('displayNone');$('.step'+nextStep).removeClass('displayNone');$('.step'+nextStep).fadeIn()}}",
+        {
+          "@src": "assets/js/jquery-asPieProgress.min.js"
+        },
+        "jQuery(function($){$('.pie_progress').asPieProgress({namespace:'pie_progress'});$('.pie_progress--slow').asPieProgress({namespace:'pie_progress',goal:1000,min:0,max:1000,speed:100,easing:'linear',barcolor:'#66C429',barsize:'10',numberCallback:function numberCallback(n){var percentage=Math.round(this.getPercentage(n));console.log('percentage outer');if(percentage==100){setTimeout(function(){console.log('percentage');document.getElementById('main-section').style=\"display:none;\";document.getElementById('wrapper1').style=\"display:block\";startTimer()},3000)}return parseInt(percentage)+'%'},contentCallback:null})});"
+      ]
+    }
+  }
+}
